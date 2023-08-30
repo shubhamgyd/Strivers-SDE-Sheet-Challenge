@@ -26,3 +26,6 @@ if __name__=="__main__":
     for element in ans:
         print(f"[{element[0]} {element[1]}]", end=" ")
     print()
+    
+# Time Complexity: O(nlogn + 2n)
+# Space Complexity: O(n)
