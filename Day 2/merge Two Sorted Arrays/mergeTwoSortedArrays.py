@@ -11,14 +11,15 @@ def mergeSorted(arr1, arr2):
     while ptr1 < n:
         if arr1[ptr1] > arr2[ptr2]:
             arr1[ptr1],arr2[ptr2] = arr2[ptr2],arr1[ptr1]
-            print(arr2[ptr2])
             if arr2[ptr2] > arr2[ptr2+1]:
                 arr2.sort()
         else:
             ptr1 += 1
 
-arr1 = [1,4,8,10,11]
-arr2 = [2,3,9]
+# arr1 = [1,4,8,10,11]
+# arr2 = [2,3,9]
+arr1 = [1, 8, 8]
+arr2 = [2, 3, 4, 5]
 mergeSorted(arr1,arr2)
 print(arr1)
 print(arr2)
