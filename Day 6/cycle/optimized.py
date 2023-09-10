@@ -38,7 +38,7 @@ def cycleDetect(head):
         return False
     slow = head
     fast = head
-    while fast != None or fast.next != None:
+    while fast != None and fast.next != None:
         slow = slow.next
         fast = fast.next.next
         if slow == fast:
