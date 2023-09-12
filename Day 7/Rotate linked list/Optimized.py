@@ -25,19 +25,21 @@ def insertNode(head, val):
 def rotateRight(head, k):
     if head == None or head.next == None:
         return head
-    for i in range(k):
-        temp = head
-        while temp.next.next != None:
-            temp = temp.next
-        temp1 = temp.next
-        temp.next = None
-        temp1.next = head
-        head = temp1
-    return temp1
-        
-        
-
-
+    curr = head
+    length = 1
+    while curr.next != None:
+        curr = curr.next
+        length += 1
+    curr.next = head
+    if k > length:
+        length = k % length
+    iterations = length - k
+    while iterations:
+        curr = curr.next
+        iterations -= 1
+    head = curr.next
+    curr.next = None
+    return head
 
 
 # utility function to print list
@@ -72,3 +74,6 @@ if __name__ == '__main__':
 
     print("After", k, "iterations: ", end='')
     printList(newHead)  # list after rotating nodes
+    
+# Time Complexity: O(Length of linked List) + O(Length of linked list - (k % linked list))
+# Space Complexity: O(1)
