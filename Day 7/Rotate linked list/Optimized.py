@@ -1,4 +1,4 @@
-# https://takeuforward.org/data-structure/rotate-a-linked-list/
+ https://takeuforward.org/data-structure/rotate-a-linked-list/
 class Node:
     def __init__(self, val):
         self.val = val
