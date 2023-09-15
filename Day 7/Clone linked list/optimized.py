@@ -70,15 +70,3 @@ if __name__=="__main__":
 # Space Complexity: O(N)
 
 # Reason: Use of hashmap for storing entire data.
-
-
-n = len(matrix)
-m = len(matrix[0])
-for i in range(n):
-    for j in range(m):
-        if matrix[i][j] = 0
-            for l in range(n):
-                matrix[l][j] = 0
-            for p in range(m):
-                matrix[i][p] = 0
-return matrix
