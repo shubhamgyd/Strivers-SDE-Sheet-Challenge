@@ -11,3 +11,6 @@ def count(arr):
 
 arr = [1,1,0,0,1,1,1]
 print(count(arr))
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)
