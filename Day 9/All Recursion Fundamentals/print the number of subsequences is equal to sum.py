@@ -1,4 +1,8 @@
 def printS(ind, s, sum, arr, n):
+    
+    # condition not satisfied
+    # strictly done if array contains positives only
+    if(s > sum): return 0
     if(ind == n):
         if s == sum:
             return 1
