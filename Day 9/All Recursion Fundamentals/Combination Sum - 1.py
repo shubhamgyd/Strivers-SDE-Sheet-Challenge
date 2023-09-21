@@ -23,5 +23,5 @@ def CombinationSum(target, arr):
 # CombinationSum(6,[2,4,6])
 CombinationSum(0,[5,-2,0,-5,2])
 
-# Time Complexity: O(2^t*k) where t is the target, k is the average length
-# Space Complexity: O(k*x), k is the average length and x is the no. of combinations
+# Time Complexity: O(2^N*k) where t is the target, k is the average length
+# Space Complexity: O(N), N is the length of the arr
