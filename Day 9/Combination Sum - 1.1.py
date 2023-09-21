@@ -3,14 +3,11 @@ def Combination(ind,target,temp,arr,ans):
         if target == 0:
             ans.append(temp.copy())
         return
-    
-    # pick
-    temp.append(arr[ind])
+    if arr[ind] <= target:
+        temp.append(arr[ind])
+        Combination(ind+1,target,temp,arr,ans)
+        temp.pop()
     Combination(ind+1,target-arr[ind],temp,arr,ans)
-    
-    # not pick
-    temp.pop()
-    Combination(ind+1,target,temp,arr,ans)
             
 
 def CombinationSum(target, arr):
@@ -20,6 +17,6 @@ def CombinationSum(target, arr):
     ans.sort()
     print(ans)
     
-# CombinationSum(6,[2,4,6])
-CombinationSum(0,[5,-2,0,-5,2])
+CombinationSum(6,[2,4,6])
+# CombinationSum(0,[5,-2,0,-5,2])
     
