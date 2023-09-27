@@ -8,6 +8,7 @@ def frogJump(arr,n):
         if index > 1:
             ss = dp[index - 2] + abs(arr[index] - arr[index-2])
         dp[index] = min(fs,ss)
+    print(dp)
     return dp[n-1]
 
 arr = [30,10,60,10,60,50]
