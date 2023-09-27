@@ -1,11 +1,10 @@
-def nextGreaterPermutation(A):
+okdef nextGreaterPermutation(A):
     n = len(A)
     ind = -1
     for i in range(n-2, -1,-1):
         if A[i] < A[i+1]:
             ind = i
             break
-    print(ind)
     if ind == -1:
         A.reverse()
         return A
@@ -14,7 +13,6 @@ def nextGreaterPermutation(A):
         if A[i] > A[ind]:
             A[i],A[ind] = A[ind],A[i]
             break
-    # A[ind+1],A[ind] = A[ind], A[ind+1]
             
     # Step 3: reverse the right half:
     A[ind+1:] = reversed(A[ind+1:])
@@ -25,3 +23,4 @@ def nextGreaterPermutation(A):
 if __name__=="__main__":
     # print(nextGreaterPermutation([1,2,3]))
     print(nextGreaterPermutation([2,1,5,4,3,0,0]))
+# [2,3,0,0,1,4,5]
