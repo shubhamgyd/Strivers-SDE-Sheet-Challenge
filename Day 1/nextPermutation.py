@@ -1,11 +1,10 @@
-def nextGreaterPermutation(A):
+okdef nextGreaterPermutation(A):
     n = len(A)
     ind = -1
     for i in range(n-2, -1,-1):
         if A[i] < A[i+1]:
             ind = i
             break
-    print(ind)
     if ind == -1:
         A.reverse()
         return A
