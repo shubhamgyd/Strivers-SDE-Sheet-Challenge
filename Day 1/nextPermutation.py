@@ -13,7 +13,6 @@ okdef nextGreaterPermutation(A):
         if A[i] > A[ind]:
             A[i],A[ind] = A[ind],A[i]
             break
-        A[ind+1],A[ind] = A[ind], A[ind+1]
             
     # Step 3: reverse the right half:
     A[ind+1:] = reversed(A[ind+1:])
