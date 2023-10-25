@@ -25,9 +25,15 @@ class Solution:
 
 
 if __name__ == '__main__':
-    n = 3
-    W = 50
-    arr = [Item(60, 10), Item(100, 20), Item(120, 30)]
+    # n = 3
+    # W = 50
+    # arr = [Item(60, 10), Item(100, 20), Item(120, 30)]
+    n = 6
+    W = 15
+    arr = [Item(1,10), Item(2,5), Item(4,4), Item(4,2), Item(7,7), Item(2,3)]
+#     values = [1, 2, 4, 4, 7, 2]
+# weight = [10, 5, 4, 2, 7, 3]
+# w = 15
     obj = Solution()
     ans = obj.fractionalKnapsack(W, arr, n)
     print("The maximum value is", ans)

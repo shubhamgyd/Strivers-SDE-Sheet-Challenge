@@ -11,7 +11,6 @@ def FractionalKanpsack(values, weight, w):
     sorted_d = sorted(d.items(), key=lambda x: x[1], reverse=True)
     sorted_d1 = sorted(d1.items(), key=lambda x: x[1], reverse=True)
     
-    
     l = 0
     total = 0
     i = 0
@@ -27,9 +26,11 @@ def FractionalKanpsack(values, weight, w):
             i += 1
     return l
     
-values = [100, 60, 120]
-weight = [20, 10, 30]
-w = 50
+# values = [100, 60, 120]
+# weight = [20, 10, 30]
+values = [1, 2, 4, 4, 7, 2]
+weight = [10, 5, 4, 2, 7, 3]
+w = 15
 print(FractionalKanpsack(values, weight, w))
 
 # Time Complexity: O(N * logN) + O(N)
