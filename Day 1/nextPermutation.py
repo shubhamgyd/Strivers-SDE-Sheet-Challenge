@@ -1,4 +1,4 @@
-okdef nextGreaterPermutation(A):
+def nextGreaterPermutation(A):
     n = len(A)
     ind = -1
     for i in range(n-2, -1,-1):
