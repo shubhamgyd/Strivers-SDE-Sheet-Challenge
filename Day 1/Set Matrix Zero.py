@@ -1,3 +1,4 @@
+"""
 def setZero(matrix, n, m):
     temp = []
     for i in range(n):
@@ -68,4 +69,3 @@ if __name__ == "__main__":
 	    for ele in row:
 	        print(ele, end=" ")
 	    print()
-"""
